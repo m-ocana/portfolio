@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Manuel Ocaña</title>
+        <meta name="description" content="Manuel's Contact Page" />
+        <meta
+            name="keywords"
+            content="manuel, software engineer, web development, webgl, three.js, cannon.js"
+        />
+        <meta name="author" content="Manuel Ocaña" />
+        <link rel="stylesheet" type="text/css" href="src/sass/styles.scss" />
+        <script>
+            document.documentElement.className = 'js'
+            var supportsCssVars = function () {
+                var e,
+                    t = document.createElement('style')
+                return (
+                    (t.innerHTML = 'root: { --tmp-var: bold; }'),
+                    document.head.appendChild(t),
+                    (e = !!(
+                        window.CSS &&
+                        window.CSS.supports &&
+                        window.CSS.supports('font-weight', 'var(--tmp-var)')
+                    )),
+                    t.parentNode.removeChild(t),
+                    e
+                )
+            }
+            supportsCssVars() ||
+                alert(
+                    'Please view this demo in a modern browser that supports CSS Variables.',
+                )
+        </script>
+        <script src="src/js/index.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-83678284-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
+
+            gtag('config', 'UA-83678284-1')
+        </script>
+    </head>
+    <body>
+        <main>
+            <div class="frame">
+                <div class="frame__links">
+                    <a
+                        href="mailto:contact@manuelocana.me?subject=Contact Request - Manuel Ocaña"
+                        >Contact</a
+                    >
+                    <a
+                        href="https://www.linkedin.com/in/m-ocana"
+                        target="_blank"
+                        >LinkedIn</a
+                    >
+                    <a href="https://github.com/m-ocana" target="_blank"
+                        >GitHub</a
+                    >
+                </div>
+            </div>
+            <div class="content">
+                <nav class="mainNav | visually-hidden">
+                    <ul>
+                        <li><a href="#">hello</a></li>
+                        <li><a href="#">world</a></li>
+                        <li>
+                            <a href="#">I'm Manu</a>
+                        </li>
+                    </ul>
+                </nav>
+                <canvas id="stage"></canvas>
+            </div>
+        </main>
+    </body>
+</html>
