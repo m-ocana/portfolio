@@ -5,8 +5,11 @@ cache:
   yarn: true
   directories:
     - node_modules
+<<<<<<< HEAD
 script:
   - echo "skipping tests"
+=======
+>>>>>>> d64507f... Add travis config
 before_deploy:
   - yarn global add travis-ci-cloudfront-invalidation
   - yarn run build
@@ -16,7 +19,11 @@ deploy:
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: $S3_BUCKET
   skip_cleanup: true
+<<<<<<< HEAD
   local_dir: dist
+=======
+  local-dir: dist
+>>>>>>> d64507f... Add travis config
   on:
     branch: master
 after_deploy:
