@@ -104,14 +104,8 @@ a:focus {
 
     a {
         display: inline-block;
-
-        text-align: right;
+        padding: 0 8px;
     }
-}
-
-.frame__links a:not(:last-child) {
-    margin-right: 1rem;
-    margin-bottom: 0;
 }
 
 .content {
